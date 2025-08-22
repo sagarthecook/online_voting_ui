@@ -1,0 +1,26 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+  <h2 class="login-title">Voter Portal Access</h2>
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" type="text" />
+    <mat-error *ngIf="submitted && loginForm.controls.username.errors">
+      Username is required.
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" type="password" />
+    <mat-error *ngIf="submitted && loginForm.controls.password.errors">
+      Password is required.
+    </mat-error>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit" class="full-width">Login</button>
+    <div class="login-links-row">
+      <div class="forgot-link">
+        <a href="#" tabindex="0">Forgot password?</a>
+      </div>
+      <div class="create-user-link">
+        <a href="#" tabindex="0">Create User</a>
+      </div>
+    </div>
+</form>

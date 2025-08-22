@@ -1,0 +1,58 @@
+.login-bg {
+  min-height: 100vh;
+  background: var(--mat-background, #f5f5f5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  max-width: 340px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: var(--mat-card-background, #fff);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.login-title {
+  text-align: center;
+  color: var(--mat-primary, #1976d2);
+  margin-bottom: 1rem;
+}
+
+.login-links-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.forgot-link {
+  text-align: left;
+}
+.forgot-link a {
+  color: var(--mat-primary, #1976d2);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.forgot-link a:hover {
+  text-decoration: underline;
+}
+.create-user-link {
+  text-align: right;
+}
+.create-user-link a {
+  color: var(--mat-primary, #1976d2);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.create-user-link a:hover {
+  text-decoration: underline;
+}
